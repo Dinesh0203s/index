@@ -17,7 +17,9 @@ body {
     padding: 15px 30px;
     background-color: #222;
 }
-
+.navbar-links:hover{
+    background-color: aqua;
+}
 .navbar-logo .logo {
     height: 40px;
 }
