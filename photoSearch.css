@@ -2,9 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    
 }
 
 body {
@@ -100,16 +98,6 @@ body {
     color:#000000
 }
 
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -128,12 +116,8 @@ form {
 }
 
 label {
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
     font-weight: bold;
-}
-
-input[type="file"] {
-    margin-bottom: 20px;
 }
 
 button {
@@ -172,4 +156,18 @@ button:hover {
     border: 2px solid #ddd;
     padding: 5px;
     background: #f9f9f9;
+}
+
+.container{
+    color:black;
+    text-align: center;
+}
+.preview{
+    margin-left: 10vh;
+    margin-right: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap   ;
+    align-content: center;
 }
