@@ -99,5 +99,23 @@ body {
     background-color:#ffdb98;
     color:#000000
 }
+/* Container */
+.video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000; /* Optional background color */
+}
 
-
+/* Video in Bottom-Left Corner */
+.ai-video {
+    width: 300px; /* Custom width */
+    height: 200px; /* Custom height */
+    position: absolute;
+    bottom: 20px; /* Distance from bottom */
+    left: 20px; /* Distance from left */
+    object-fit: cover;
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+}
