@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Results</h1>
+        <div class="results">
+            {% if photos %}
+                {% for photo in photos %}
+                    <div class="photo">
+                        <img src="{{ url_for('serve_image', filename=photo) }}" alt="Group Photo">
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No matches found.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

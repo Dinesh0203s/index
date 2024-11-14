@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Photo Sharing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="navbar-logo">
+        <img src="logo.jpg" alt="Logo" class="logo">
+    </div>
+    <nav class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="#">Photo Search</a>
+        <a href="#">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    <div class="navbar-actions">
+        <a href="login.html" class="btn-login">Login</a>
+    </div>
+</header>
+<div class="container">
+    <h1>Find Yourself in Group Photos</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="selfie">Upload a Selfie:</label>
+        <input type="file" name="selfie" id="selfie" accept="image/*" required>
+        <div class="preview">
+            <img id="selfie-preview" alt="Selfie Preview" style="display:none;">
+        </div>
+
+        <label for="group_photos">Upload Group Photos:</label>
+        <input type="file" name="group_photos" id="group_photos" accept="image/*" multiple required>
+        <div id="group-photos-preview" class="preview"></div>
+        
+        <button type="submit">Find Me</button>
+    </form>
+</div>
+
+</body>
+</html>

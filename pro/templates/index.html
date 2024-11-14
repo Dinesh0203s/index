@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Filter</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find Yourself in Group Photos</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="selfie">Upload a Selfie:</label>
+            <input type="file" name="selfie" id="selfie" accept="image/*" required>
+            <div class="preview">
+                <img id="selfie-preview" alt="Selfie Preview" style="display:none;">
+            </div>
+
+            <label for="group_photos">Upload Group Photos:</label>
+            <input type="file" name="group_photos" id="group_photos" accept="image/*" multiple required>
+            <div id="group-photos-preview" class="preview"></div>
+            
+            <button type="submit">Find Me</button>
+        </form>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
