@@ -99,23 +99,24 @@ body {
     background-color:#ffdb98;
     color:#000000
 }
-/* Container */
-.video-container {
+/* Container styling */
+.ai-v {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 80%;
+    padding-bottom: 45%; /* Maintains aspect ratio */
+    height: 0;
     overflow: hidden;
-    background-color: #000; /* Optional background color */
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Video in Bottom-Left Corner */
-.ai-video {
-    width: 300px; /* Custom width */
-    height: 200px; /* Custom height */
+/* Iframe styling */
+.video-container{
     position: absolute;
-    bottom: 20px; /* Distance from bottom */
-    left: 20px; /* Distance from left */
-    object-fit: cover;
-    border-radius: 8px; /* Optional rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Removes the default border */
 }
